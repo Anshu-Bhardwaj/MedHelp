@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "124675364992",
+    "firebase_url": "https://medhelp-24453.firebaseio.com",
+    "project_id": "medhelp-24453",
+    "storage_bucket": "medhelp-24453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124675364992:android:3ae5ffcef2543cf8",
+        "android_client_info": {
+          "package_name": "com.example.anshubhardwaj.medhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124675364992-flk629vcatnsrjucc05v3jqk8ejmjje7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anshubhardwaj.medhelp",
+            "certificate_hash": "8f2784f18a95fc541d25a5f71eceb1affded1472"
+          }
+        },
+        {
+          "client_id": "124675364992-dhlgk3cms34qs3esi0khrevut4mr197r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBliscTbobjqGtbVMbCWg3A7IANWEpnH4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124675364992-dhlgk3cms34qs3esi0khrevut4mr197r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

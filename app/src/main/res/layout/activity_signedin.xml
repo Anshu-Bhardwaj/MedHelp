@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignedinActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Personal Details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#a0522d"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:text="Registered mobile number:"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:text="@string/name"
+        android:textSize="18dp" />
+
+    <EditText
+
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_phone_number"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignParentStart="true"
+        android:text="@string/email"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="198dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="@string/age"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gridLayout1"
+        android:layout_alignParentStart="true"
+        android:text="@string/gender"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="197dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_alignParentRight="true">
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/female" />
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male" />
+        </RadioGroup>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/submit"
+        android:background="#f3f3"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gridLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-63dp"
+        android:text="SIGN OUT"
+        android:background="#ff00"
+        android:layout_alignRight="@+id/gridLayout1"
+        android:layout_marginRight="-63dp" />
+
+</RelativeLayout>
